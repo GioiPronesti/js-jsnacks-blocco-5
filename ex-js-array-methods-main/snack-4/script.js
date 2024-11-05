@@ -8,9 +8,10 @@ const posts = [
 // Crea un nuovo array coi nomi di tutti gli autori
 // Risultato: ['Marco', 'Luca', 'Fabrizio', 'Enrico']
 
-const mainAuthors = posts.map((post) => post.author);
+//const mainAuthors = posts.map((post) => post.author);
+
+const mainAuthors = posts.map((post) => {
+  return post.author;
+});
 
 console.log(mainAuthors);
-
-/*const mainAuthors = posts.map((post) => {
-  return post.authors })  */
